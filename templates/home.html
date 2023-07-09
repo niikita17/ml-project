@@ -1,0 +1,300 @@
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+  h1, p{
+    text-align: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-/draw1.webp");
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+
+h1, p {
+  text-align:left;
+}
+
+
+input {
+  margin: 0.25em 0em 1em 0em;
+}
+input {
+  margin: 0.25em 0em 1em 0em;
+  outline: none;
+  padding: 0.5em;
+  border: none;
+  background-color: rgb(225, 225, 225);
+  border-radius: 0.25em;
+  color: black;
+}
+
+button {
+  padding: 0.75em;
+  border: none;
+  outline: none;
+  background-color: rgb(68, 18, 232);
+  color: white;
+  border-radius: 0.25em;
+}
+
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(41, 4, 164);
+} 
+
+</style>
+<body >
+      <form action="/student/result" method="post">
+        {% csrf_token %}
+
+        <div class="container">
+      <div>
+        <h1>Water Notifier</h1>
+        <p></p><br>
+        <label for="username"><b>tempreature:</b></label><br>
+        <input
+          type="number"
+          placeholder="Enter tempreature"
+          name="temp"
+          id="temp"
+          required
+        />
+<br>
+        <label for="email"><b>humidity</b></label><br>
+        <input
+          type="number"
+          placeholder="Enter humidity"
+          name="humdity"
+          id="humidity"
+          required
+        />
+<br>
+        <label for="pwd"><b>exercise</b></label><br>
+        <input
+          type="number"
+          placeholder="Enter exercise"
+          name="exe"
+          id="exe"
+          required
+        />
+<br>
+        <label for="pwd-repeat"><b>StepCount</b></label><br>
+        <input
+          type="number"
+          placeholder="enter StepCount"
+          name="step"
+          id="step"
+          required
+        />
+<br>
+        <button type="submit">predict</button>
+      </div>
+    
+    </div>
+    </form>
+
+</body>
+</html>  -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Pretty Paris</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: aliceblue;
+    }
+    img{
+      max-width: 320px;
+      float:left
+      
+    }
+    .container{
+      max-width: 320px auto;
+      width: 70%;
+    }
+    .text{
+      color:black;
+
+    }
+  </style>
+  <body>
+    <div class="container">
+      
+        <img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">
+      
+      <div class="text">
+        <form action="/student/result" method="post">
+          {% csrf_token %}
+  
+          <div class="container">
+      
+          <h1>Water Notifier</h1>
+          <p></p><br>
+          <label for="username"><b>tempreature:</b></label><br>
+          <input
+            type="number"
+            placeholder="Enter tempreature"
+            name="temp"
+            id="temp"
+            required
+          />
+  <br>
+          <label for="email"><b>humidity</b></label><br>
+          <input
+            type="number"
+            placeholder="Enter humidity"
+            name="humdity"
+            id="humidity"
+            required
+          />
+  <br>
+          <label for="pwd"><b>exercise</b></label><br>
+          <input
+            type="number"
+            placeholder="Enter exercise"
+            name="exe"
+            id="exe"
+            required
+          />
+  <br>
+          <label for="pwd-repeat"><b>StepCount</b></label><br>
+          <input
+            type="number"
+            placeholder="enter StepCount"
+            name="step"
+            id="step"
+            required
+          />
+  <br>
+          <button type="submit">predict</button>
+      
+      
+      </div>
+      </form>
+  
+      </div>
+    </div>
+  </body>
+</html> -->
+<html>
+  <head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+
+  
+    <section class="vh-100" style="background-color: #eee;">
+    <form  action="/student/result" method="post">
+      {% csrf_token %}
+    
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-lg-12 col-xl-11">
+            <div class="card text-black" style="border-radius: 25px;">
+              <div class="card-body p-md-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+    
+                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Water Notifier</p>
+    
+                    <form class="mx-1 mx-md-4">
+    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="number"  name="temp" id="temp" required class="form-control" placeholder="Tempreature" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="number" name="humdity" id="humidity" required class="form-control" placeholder="Humidity"/>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="number"  name="exe"  required
+                          id="exe" class="form-control"placeholder="Exercise" />
+                        </div>
+                      </div>
+    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="name"  name="step" required
+                          id="step" class="form-control" placeholder="StepCount"/>
+                        </div>
+                      </div>
+                     
+                      
+    
+                      <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                        <button type="submit">predict</button>
+                      </div>
+    
+                    </form>
+    
+                  </div>
+                  <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+    
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                      class="img-fluid" alt="Sample image">
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </form>  
+</section>
+
+  </body>
+</html>
